@@ -1,0 +1,34 @@
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Components {
+	private String day;
+	
+	public Components() {
+		
+	}
+	
+	public String selectedDay() {
+		String selection = "";
+		
+		switch(day){
+		case "day1": selection = "monday"; break;
+		case "day2": selection = "tuesday"; break;
+		case "day3": selection = "tuesday"; break;
+		case "day4": selection = "tuesday"; break;
+		case "day5": selection = "tuesday"; break;
+		case "day6": selection = "tuesday"; break;
+		case "day7": selection = "tuesday"; break;
+		}
+		
+		return selection;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+}

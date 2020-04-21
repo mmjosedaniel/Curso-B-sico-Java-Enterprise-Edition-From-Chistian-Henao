@@ -1,0 +1,6 @@
+
+public class Greeting {
+	public String getMessage(){
+		return "Hello! You are welcome";
+	}
+}

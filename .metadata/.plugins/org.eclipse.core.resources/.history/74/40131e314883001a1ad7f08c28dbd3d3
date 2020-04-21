@@ -1,0 +1,41 @@
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Components {
+	private String day;
+	List<String> daysList;
+	
+	public Components() {
+		daysList = new ArrayList<>();
+	}
+	
+	public String selectedDay() {
+		String selection = "";
+		
+		switch(day){
+			case "day1": selection = "Monday"; break;
+			case "day2": selection = "Tuesday"; break;
+			case "day3": selection = "Wednesday "; break;
+			case "day4": selection = "Thursday"; break;
+			case "day5": selection = "Friday"; break;
+			case "day6": selection = "Saturday"; break;
+			case "day7": selection = "Sunday"; break;
+		}
+		
+		return selection;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+	
+	public List<String> getDaysList() {
+		return daysList;
+	}
+}

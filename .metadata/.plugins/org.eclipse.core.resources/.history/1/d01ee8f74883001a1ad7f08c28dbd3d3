@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Components {
+	private String day;
+	List<String> daysList;
+	
+	public Components() {
+		daysList = new ArrayList<>();
+		
+		daysList.add("Monday");
+		daysList.add("Tuesday");
+		daysList.add("Wenesday");
+		daysList.add("Thursday");
+		daysList.add("Friday");
+		daysList.add("Saturday");
+		daysList.add("Sunday");
+		
+	}
+	
+	public String selectedDay() {
+		String selection = "" + day;
+		
+		return selection;
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+	
+	public List<String> getDaysList() {
+		return daysList;
+	}
+}

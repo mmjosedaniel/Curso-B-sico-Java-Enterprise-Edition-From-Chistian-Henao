@@ -1,0 +1,18 @@
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class Components {
+	private String day;
+	
+	public Components() {
+		
+	}
+
+	public String getDay() {
+		return day;
+	}
+
+	public void setDay(String day) {
+		this.day = day;
+	}
+}

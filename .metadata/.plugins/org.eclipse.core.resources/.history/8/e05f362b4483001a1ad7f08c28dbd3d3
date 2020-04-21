@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<h:form>
+		<h1>Graphic Components</h1>
+		
+		<h:selectOneMenu value="#{components.day}">
+			<f:selectItem itemValue="day1" itemLabel="Monday" />
+			<f:selectItem itemValue="day2" itemLabel="Tuesday" />
+			<f:selectItem itemValue="day3" itemLabel="Wenesday" />
+			<f:selectItem itemValue="day4" itemLabel="Thursday" />
+			<f:selectItem itemValue="day5" itemLabel="Friday" />
+			<f:selectItem itemValue="day6" itemLabel="Saturday" />
+			<f:selectItem itemValue="day7" itemLabel="Sunday" />
+		</h:selectOneMenu>
+		<br /><br />
+		
+		The selected day is: #{components.day} 
+		corresponding to #{components.selectedDay()}
+	</h:form>
+</body> 
+</html>
